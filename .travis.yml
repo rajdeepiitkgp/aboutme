@@ -2,10 +2,7 @@ language: node_js
 node-js:
   - lts/*
 script:
-  - rm -rf dist
-  - npm run lint
-  - npm run travisBuild
-  - echo "This happened"
+  - custom-build.sh
 
 notifications:
   email: false

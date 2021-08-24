@@ -10,6 +10,7 @@
     "test": "ng test",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "ng lint",
+    "travisVersion": "npm version patch",
     "version": "npm run format && git add -A",
     "postversion": "git push && git push --tags"
   },
