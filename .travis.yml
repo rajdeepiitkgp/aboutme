@@ -14,7 +14,6 @@ deploy:
     api_key: $GITHUB_TOKEN
     skip_cleanup: true
     on:
-      branch: main
       tags: true
   - provider: pages
     skip_cleanup: true
@@ -22,5 +21,4 @@ deploy:
     keep_history: true
     on:
       branch: main
-      tags: false
     local_dir: ./dist/aboutme
