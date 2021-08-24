@@ -1,6 +1,6 @@
 {
   "name": "aboutme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -11,8 +11,7 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "ng lint",
     "version": "npm run format && git add -A",
-    "postversion": "git push && git push --tags",
-    "travisVersion":"npm version patch"
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",

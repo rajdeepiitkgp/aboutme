@@ -15,14 +15,7 @@ deploy:
     skip_cleanup: true
     on:
       branch: main
-    before_deploy:
-      # Set up git user name and tag this commit
-      - git config --local user.name "Rajdeep Biswas"
-      - git config --local user.email "rajdeep.biswas2010@gmail.com"
-      - npm run travisVersion
-      - git pull
-      # export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
-      # git tag $TRAVIS_TAG
+      tags: true
   - provider: pages
     skip_cleanup: true
     github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
