@@ -5,6 +5,7 @@ echo "Executing Custom Build Script"
 echo "Deleting Existing dist directory"
 rm -rf dist
 echo "Checking Lint Status"
+source ~/.nvm/nvm.sh
 npm run lint
 echo "Building App"
 npm run travisBuild
