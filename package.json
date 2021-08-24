@@ -10,7 +10,6 @@
     "test": "ng test",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "ng lint",
-    "prepare": "npm run travisBuild",
     "version": "npm run format && git add -A",
     "postversion": "git push && git push --tags"
   },
