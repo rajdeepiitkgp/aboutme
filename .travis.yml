@@ -5,10 +5,7 @@ script:
   - rm -rf dist
   - npm run lint
   - npm run travisBuild
-script:
-  - echo "This happened"
-  on:
-    branch: main
+
 notifications:
   email: false
 
