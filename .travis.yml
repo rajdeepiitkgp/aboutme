@@ -8,6 +8,8 @@ notifications:
 deploy:
   - provider: script
     script: custom-build.sh
+    on:
+      branch: main
   - provider: pages
     skip_cleanup: true
     github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
