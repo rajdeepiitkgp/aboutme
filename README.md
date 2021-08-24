@@ -1,4 +1,5 @@
 # Aboutme
+[![git version](https://img.shields.io/github/v/release/rajdeepiitkgp/aboutme?color=lime%20green&label=GIT%20Release)](https://github.com/rajdeepiitkgp/aboutme) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  [![Build Status](https://travis-ci.com/rajdeepiitkgp/aboutme.svg?branch=main)](https://travis-ci.com/rajdeepiitkgp/aboutme) 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
 
