@@ -1,17 +1,17 @@
 language: node_js
 node-js:
   - lts/*
-script:
-  - ./custom-build.sh
 
 notifications:
   email: false
 
 deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep_history: true
-  on:
-    branch: main
-  local_dir: ./dist/aboutme
+  - provider: script
+      script: bash custom-build.sh
+  - provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+    keep_history: true
+    on:
+      branch: main
+    local_dir: ./dist/aboutme
