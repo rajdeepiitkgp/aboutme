@@ -11,8 +11,9 @@ notifications:
 
 before_deploy:
   # Set up git user name and tag this commit
-  - git config --local user.name "rajdeepiitkgp"
+  - git config --local user.name "Rajdeep Biswas"
   - git config --local user.email "rajdeep.biswas2010@gmail.com"
+  # npm run travisVersion
   - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
   - git tag $TRAVIS_TAG
 
