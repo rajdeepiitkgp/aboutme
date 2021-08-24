@@ -2,7 +2,7 @@ language: node_js
 node-js:
   - lts/*
 script:
-  - custom-build.sh
+  - ./custom-build.sh
 
 notifications:
   email: false
