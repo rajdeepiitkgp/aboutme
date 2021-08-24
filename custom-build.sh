@@ -1,11 +1,10 @@
 #!/bin/bash
 
 set -ev
-echo "Executing Custom Build Script"
-echo "Deleting Existing dist directory"
+echo 'Executing Custom Build Script'
+echo 'Deleting Existing dist directory'
 rm -rf dist
-echo "Checking Lint Status"
-source ~/.nvm/nvm.sh
+echo 'Checking Lint Status'
 npm run lint
 echo "Building App"
 npm run travisBuild

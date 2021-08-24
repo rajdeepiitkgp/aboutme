@@ -8,6 +8,8 @@ notifications:
 deploy:
   - provider: script
     script: custom-build.sh
+    skip_cleanup: true
+    keep_history: true
     on:
       branch: main
   - provider: pages
