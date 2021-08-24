@@ -22,5 +22,5 @@ deploy:
     keep_history: true
     on:
       branch: main
-      tags: true
+      tags: false
     local_dir: ./dist/aboutme
